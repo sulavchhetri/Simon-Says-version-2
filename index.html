@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Column Hack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="smallcontainer" id = 'small'>
+            <div class="fieldcontainer">
+                <div class="box 50" id='1' onclick="changecolor(this.id)"></div>
+                <div class="box 50" id='2' onclick="changecolor(this.id)"></div>
+                <div class="box 50" id='3' onclick="changecolor(this.id)"></div>
+                <div class="box 50" id='4' onclick="changecolor(this.id)"></div>
+            </div>
+            <div class="fieldcontainer">
+                <div class="box 51" id='5' onclick="changecolor(this.id)"></div>
+                <div class="box 51" id='6' onclick="changecolor(this.id)"></div>
+                <div class="box 51" id='7' onclick="changecolor(this.id)"></div>
+                <div class="box 51" id='8' onclick="changecolor(this.id)"></div>
+            </div>
+            <div class="fieldcontainer">
+                <div class="box 52" id='9' onclick="changecolor(this.id)"></div>
+                <div class="box 52" id='10' onclick="changecolor(this.id)"></div>
+                <div class="box 52" id='11' onclick="changecolor(this.id)"></div>
+                <div class="box 52" id='12' onclick="changecolor(this.id)"></div>
+            </div>
+            <div class="fieldcontainer">
+                <div class="box 53" id='13' onclick="changecolor(this.id)"></div>
+                <div class="box 53" id='14' onclick="changecolor(this.id)"></div>
+                <div class="box 53" id='15' onclick="changecolor(this.id)"></div>
+                <div class="box 53" id='16' onclick="changecolor(this.id)"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottombox">
+                <div class="smallbox" id='100'></div>
+                <div class="smallbox" id='101'></div>
+                <div class="smallbox" id='102'></div>
+            </div>
+            <div class="timer">
+                <h3 id='number'>40</h3>
+            </div>
+        </div>
+    </div>
+    <div id="alertbox">
+        <h1>Hack Failed</h1>
+        <p>Two many Attempts</p>
+        <button onclick="tryagain()">
+            <h1>Try Again</h1>
+        </button>
+    </div>
+    <div id="lastbox">
+        <h1>You Win</h1>
+        <p>Congratulations</p>
+        <button onclick="tryagain()">
+            <h1>Try Again</h1>
+        </button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
